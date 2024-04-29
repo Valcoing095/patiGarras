@@ -7,11 +7,6 @@ import registerview from '../views/registerview.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/loginview',
     name: 'loginview',
     component: loginview
   },{
