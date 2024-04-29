@@ -23,20 +23,21 @@
   </template>
   
   <script>
-  export default {
-    name: 'UserComponent',
-    props: {
-    data() {
-      return {
-        contactList: [
-          { nombre: 'Juan', apellido: 'Pérez', telefono: '123-456-7890', direccion: 'Calle Principal 123' },
-          { nombre: 'María', apellido: 'González', telefono: '987-654-3210', direccion: 'Avenida Central 456' },
-          // Agrega más contactos aquí...
-        ]
-      };
-    }
-        }
-    }
+
+//  export default {
+//   props: {
+//     nombre: String,
+//     apellido: String,
+//     ['contact.nombre', 'contact.apellido', 'contact.telefono', 'contact.direccion' ]
+//   }
+export default {
+  name: 'UserComponent',
+  props: {
+    contactList: Array
+  }
+  // Otras opciones del componente como data, methods, etc.
+}
+
   </script>
   
   <style scoped>
@@ -51,8 +52,9 @@
   /* Estilos específicos para este componente */
 .title {
   font-family: 'CatPaw', cursive;
-  font-size: 40px; /* Tamaño de fuente */
+  font-size: 55px; /* Tamaño de fuente */
   color: #ff33eb; /* Color del texto */
+  text-shadow: 0px 5px 2px #4b014f;
   text-transform: uppercase; /* Convertir el texto a mayúsculas */
   letter-spacing: 2px; /* Espaciado entre letras */
   margin-top: 20px; /* Margen superior */
@@ -64,7 +66,7 @@
   }
   
   th, td {
-    border: 1px solid #f200ff;
+    border: 1px solid #4b014f;
     padding: 8px;
     text-align: left;
   }
