@@ -16,7 +16,8 @@
                 <a href="#">Olvide La Contraseña</a><br>         
             </div>
             <div id="botoneslogin">
-                <button @click="consolLogue()">Iniciar</button> 
+                <!-- <button @click="consolLogue()">Iniciar</button>  -->
+                <button><router-link to="/users">Login</router-link></button>  
                 <button><router-link to="/Registrate">Registrate</router-link></button>                             
             </div><br>
         </form>
