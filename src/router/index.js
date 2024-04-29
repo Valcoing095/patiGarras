@@ -1,11 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import ConfirmationComponentView from '../views/ConfirmationComponentView.vue'
+import UsersView from '../views/UsersView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: ConfirmationComponentView
+  },
+  {
+    path: '/users',
+    name: 'users',
+    component: UsersView
   },
   {
     path: '/about',
