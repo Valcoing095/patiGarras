@@ -1,12 +1,17 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
+<<<<<<< HEAD
     <router-link to="/loginview">login</router-link>
   </nav>
+=======
+    <router-link to="/about">About</router-link>
+  </nav> -->
+>>>>>>> 909de80224b3cb0537410e73dc8ee10d993c6158
   <router-view/>
 </template>
 
-<style>
+<!-- <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +32,4 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
-</style>
+</style> -->

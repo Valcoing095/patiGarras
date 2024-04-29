@@ -90,7 +90,7 @@ body {
     color: white;
     text-decoration: none;
 }
-.form_submit a:hover {s
+.form_submit a:hover {
     color: #cf93cf;
 }
 @media screen (max-width:425px) {
