@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import registerview from '../views/registerview.vue'
 
 
@@ -10,8 +9,8 @@ const routes = [
     component: ConfirmationComponentView
   },
   {
-    path: '/Registrate',
-    name: 'Registrate',
+    path: '/registrate',
+    name: 'registrate',
     component: registerview
   },
 ]

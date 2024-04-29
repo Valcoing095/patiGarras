@@ -174,7 +174,7 @@ template {
 .form_submit a:hover {
     color: #cf93cf;
 }
-@media screen (max-width:425px) {
+/* @media screen (max-width:425px) {
     .form_h2 {font-size: 1.2rem;}
- }
+ } */
 </style>
