@@ -10,46 +10,47 @@
             <section id="s1">
 
             <label for="nombre" >Nombre de usuario </label>
-            <input id="nombre" type="text"  v-model="Person.nombre">
+            <input  id="nombre" type="text"  v-model="Person.nombre">
             <br><br>
 
             <label for="correo">Correo </label>
-            <input id="correo" type="correo" v-model="Person.correo">
+            <input  id="correo" type="correo" v-model="Person.correo">
             <br><br>
 
             <label for="nmascota">Nombre de mascota </label>
-            <input id="nmascota" type="text"  v-model="Person.nmascota">
+            <input  id="nmascota" type="text"  v-model="Person.nomreMascota">
             <br><br>
 
             <label for="raza">Raza</label>
-            <input id="raza" type="text"  v-model="Person.raza">
+            <input  id="raza" type="text"  v-model="Person.raza">
             <br><br>
 
             <label for="edad">Edad de la mascota</label>
-            <input id="edad" type="number" min="1" max="18" v-model="Person.edad">
+            <input  id="edad" type="number" min="1" max="18" v-model="Person.edadMascota">
             <br><br>
 
             <label for="dresidencia">Departamento de residencia</label>
-            <input id="dresidencia" type="text"  v-model="Person.dresidencia">
+            <input  id="dresidencia" type="text"  v-model="Person.direccion">
             <br><br>
             
             <label for="password">contraseña</label>
-            <input id="password" type="password"  v-model="Person.password">
+            <input  id="password" type="password"  v-model="Person.contraseña">
             <br><br>
 
             <label for="password">Repetir contraseña</label>
-            <input id="password" type="password"  v-model="Person.password">
+            <input  id="password" type="password">
             <br><br>
-
             <br>
             <br>
-        
             </section>
-                <h5 class="form_h5_2">
-                    <li>Complete todos los campos obligatorios (*).</li>
-                    <li>Proporcione información precisa y actualizada.</li>
-                    <li>Utilice el formato solicitado para fechas, números y otros datos específicos.</li>
-                </h5>
+            <h5 class="form_h5_2">
+                <li>Complete todos los campos obligatorios (*).</li>
+                <li>Proporcione información precisa y actualizada.</li>
+                <li>Utilice el formato solicitado para fechas, números y otros datos específicos.</li>
+            </h5>
+            <div class="button">
+                <button><router-link @click="this.$store.dispatch('actualizarPersona', Person)" to="/Registrate">Registrate</router-link></button>
+            </div>
         </div>
     </div>
 </template>
@@ -62,14 +63,15 @@ export default {
 
     // Variables
     let Person = {
-            nombre: '',
-            correo: '',
-            nmascota: '',
-            raza:'',
-            edad: null,
-            dresidencia:'',
-            password:'',          
-    };
+        nombre: '',
+        correo: '',
+        direccion:'',
+        contraseña:'',
+        nomreMascota:'',
+        raza:'',
+        edadMascota:'',
+        codigo: '',
+      };
 
     return {
       Person,

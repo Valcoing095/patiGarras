@@ -16,7 +16,8 @@
                 <a href="#">Olvide La Contraseña</a><br>         
             </div>
             <div id="botoneslogin">
-                <button><a href="#">Iniciar</a></button> 
+                <!-- <button @click="consolLogue()">Iniciar</button>  -->
+                <button><router-link to="/users">Login</router-link></button>  
                 <button><router-link to="/Registrate">Registrate</router-link></button>                             
             </div><br>
         </form>
@@ -26,7 +27,12 @@
 
 <script>
 export default{
-    name: 'logincomponent',     
+    name: 'logincomponent',
+    methods:{
+        consolLogue(){
+            var datos = JSON.parse(localStorage.getItem('datos')) || [];
+        }
+    }     
 }
 </script>
 
