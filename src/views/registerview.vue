@@ -15,7 +15,7 @@
     components: {
         register,
     },
-  } // Cierra el Export default
+  }
   </script>
   
   <style scoped>
