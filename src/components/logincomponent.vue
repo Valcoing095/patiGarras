@@ -16,7 +16,7 @@
             </div>
             <div id="botoneslogin">
                 <button><a href="#">Iniciar</a></button> 
-                <button><a href="register.html">Registrarte</a></button>                             
+                <button><router-link to="/Registrate">Registrate</router-link></button>                             
             </div><br>
         </form>
     </div>
