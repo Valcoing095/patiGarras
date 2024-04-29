@@ -4,8 +4,8 @@ import UsersView from '../views/UsersView.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
+    path: '/confirmation',
+    name: '',
     component: ConfirmationComponentView
   },
   {
