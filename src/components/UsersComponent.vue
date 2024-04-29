@@ -1,38 +1,52 @@
 <template>
     <div>
       <h1 class="title">Información de Contactos</h1>
-      <table>
+      <table border="1">
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Teléfono</th>
-            <th>Dirección</th>
+            <th>Nombre y Apellido</th>
+            <th>Correo</th>
+            <th>Departamento</th>
+            <th>Nombre Mascota</th>
+            <th>Raza</th>
+            <th>Edad Mascota</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(contact, index) in contactList" :key="index">
-            <td>{{ contact.nombre }}</td>
-            <td>{{ contact.apellido }}</td>
-            <td>{{ contact.telefono }}</td>
-            <td>{{ contact.direccion }}</td>
-          </tr>
+            <tr v-for="(dato, index) in datos" :key="index">
+                <td>{{ dato.nombre }}</td>
+                <td>{{ dato.correo }}</td>
+                <td>{{ dato.direccion }}</td>
+                <td>{{ dato.nomreMascota }}</td>
+                <td>{{ dato.raza }}</td>
+                <td>{{ dato.edadMascota }}</td>
+            </tr>
         </tbody>
       </table>
     </div>
   </template>
   
-  <script>
+<script>
   export default {
-    name: 'UserComponent',
-    props: {
     data() {
       return {
+        datos: []
       };
-    }
+    },
+    mounted() {
+      this.obtenerDatosLocalStorage();
+    },
+    methods: {
+      obtenerDatosLocalStorage() {
+        const datosLocalStorage = localStorage.getItem('datos');
+        if (datosLocalStorage) {
+          this.datos = JSON.parse(datosLocalStorage);
         }
+      }
     }
-  </script>
+  };
+</script>
+  
   
 <style scoped>
     @font-face {

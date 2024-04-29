@@ -26,6 +26,7 @@ export default createStore({
       datos.push(newPerson);
       localStorage.setItem('datos', JSON.stringify(datos));
       alert('Dato guardado correctamente: ' + newPerson);
+      location.href ="/users";
       commit('actualizarPersona', newPerson);
     },
   },
