@@ -1,5 +1,6 @@
 <template>
-   <div id="grid_formulario" class="formulario">
+<div id="body_login" class="login">
+    <div id="grid_formulario" class="formulario">
         <img class="logo1" src="../assets/logo-gato.png" alt="logo-patigarras">
         <h1>PATIGARRAS</h1>
         <form method="post">
@@ -20,6 +21,7 @@
             </div><br>
         </form>
     </div>
+</div>
 </template>
 
 <script>
@@ -29,6 +31,17 @@ export default{
 </script>
 
 <style scoped>
+.login{
+    margin: 0;
+    padding: 0%;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(10deg, #cf93cf, #A220DF );
+    height: 100vh;
+}
+
 .formulario{
     margin: 0;
     padding: 0%;
