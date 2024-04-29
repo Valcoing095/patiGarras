@@ -10,9 +10,9 @@
 import UserComponent from '../components/UsersComponent.vue';
 
 export default {
-name: 'UserComponent',
-components: {
-UserComponent
+//   name: 'UserComponent',
+  components: {
+   UserComponent
 },
 data() {
 return {
@@ -24,26 +24,7 @@ contactos: [
 ]
 };
 }
-// Otras opciones como methods, computed, etc.
-}
-// export default {
-//     name: 'UsersView',
-//     components: {
-//         UserComponent
-//     },
-//     import UserComponent from './UsersComponent.vue';
-// };
+};
 
-//     export default {
-//         components: {
-//             MiComponente
-//         },
-//         data() {
-//             return {
-//             nombreProp: 'Juan',
-//             apellidoProp: 'Pérez'
-//             };
-//         }
-//         };
 </script>
   

@@ -11,11 +11,11 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(contact, index) in contactList" :key="index">
-            <td>{{ contact.nombre }}</td>
-            <td>{{ contact.apellido }}</td>
-            <td>{{ contact.telefono }}</td>
-            <td>{{ contact.direccion }}</td>
+          <tr v-for="(contact) in contactList" :key="contact.id">
+            <td>{{ nombre }}</td>
+            <td>{{ apellido }}</td>
+            <td>{{ telefono }}</td>
+            <td>{{ direccion }}</td>
           </tr>
         </tbody>
       </table>
@@ -24,12 +24,6 @@
   
   <script>
 
-//  export default {
-//   props: {
-//     nombre: String,
-//     apellido: String,
-//     ['contact.nombre', 'contact.apellido', 'contact.telefono', 'contact.direccion' ]
-//   }
 export default {
   name: 'UserComponent',
   props: {
