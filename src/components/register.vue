@@ -1,56 +1,56 @@
 <template>
-    <div id="registro">
-        <div id="texto">
-            <h5 class="form_h5">Por favor, complete cada campo con precisión y detalle. La información
-                proporcionada será utilizada exclusivamente para los fines indicados y
-                se manejará con la debida confidencialidad.
-            </h5>
+    <div id="grid">
+        <div id="registro">
+            <div id="texto">
+                <h5 class="form_h5">Por favor, complete cada campo con precisión y detalle. La información
+                    proporcionada será utilizada exclusivamente para los fines indicados y
+                    se manejará con la debida confidencialidad.
+                </h5>
+            </div>
+            <section id="s1">
+
+            <label for="nombre" >Nombre de usuario </label>
+            <input id="nombre" type="text"  v-model="Person.nombre">
+            <br><br>
+
+            <label for="correo">Correo </label>
+            <input id="correo" type="correo" v-model="Person.correo">
+            <br><br>
+
+            <label for="nmascota">Nombre de mascota </label>
+            <input id="nmascota" type="text"  v-model="Person.nmascota">
+            <br><br>
+
+            <label for="raza">Raza</label>
+            <input id="raza" type="text"  v-model="Person.raza">
+            <br><br>
+
+            <label for="edad">Edad de la mascota</label>
+            <input id="edad" type="number" min="1" max="18" v-model="Person.edad">
+            <br><br>
+
+            <label for="dresidencia">Departamento de residencia</label>
+            <input id="dresidencia" type="text"  v-model="Person.dresidencia">
+            <br><br>
+            
+            <label for="password">contraseña</label>
+            <input id="password" type="password"  v-model="Person.password">
+            <br><br>
+
+            <label for="password">Repetir contraseña</label>
+            <input id="password" type="password"  v-model="Person.password">
+            <br><br>
+
+            <br>
+            <br>
+        
+            </section>
+                <h5 class="form_h5_2">
+                    <li>Complete todos los campos obligatorios (*).</li>
+                    <li>Proporcione información precisa y actualizada.</li>
+                    <li>Utilice el formato solicitado para fechas, números y otros datos específicos.</li>
+                </h5>
         </div>
-        <section id="s1">
-
-          <label for="nombre" >Nombre de usuario </label>
-          <input id="nombre" type="text"  v-model="Person.nombre">
-          <br><br>
-
-          <label for="correo">Correo </label>
-          <input id="correo" type="correo" v-model="Person.correo">
-          <br><br>
-
-          <label for="nmascota">Nombre de mascota </label>
-          <input id="nmascota" type="text"  v-model="Person.nmascota">
-          <br><br>
-
-          <label for="raza">Raza</label>
-          <input id="raza" type="text"  v-model="Person.raza">
-          <br><br>
-
-          <label for="edad">Edad de la mascota</label>
-          <input id="edad" type="number" min="1" max="18" v-model="Person.edad">
-          <br><br>
-
-          <label for="dresidencia">Departamento de residencia</label>
-          <input id="dresidencia" type="text"  v-model="Person.dresidencia">
-          <br><br>
-          
-          <label for="password">contraseña</label>
-          <input id="password" type="password"  v-model="Person.password">
-          <br><br>
-
-          <label for="password">Repetir contraseña</label>
-          <input id="password" type="password"  v-model="Person.password">
-          <br><br>
-
-          <br>
-          <br>
-    
-        </section>
-    </div>
-    <div>
-        <h5 class="texto2">
-            <li>Complete todos los campos obligatorios (*).</li>
-            <li>Proporcione información precisa y actualizada.</li>
-            <li>Utilice el formato solicitado para fechas, números y otros datos específicos.</li>
-        </h5>
     </div>
 </template>
 
@@ -79,9 +79,9 @@ export default {
 </script>
 
 <style scoped>
-template {
+#grid {
     background: linear-gradient(150deg, #cf93cf, #A220DF );
-    height: 100vh;
+    height: 110vh;
     display: flex;
 }
 #registro {
@@ -100,10 +100,6 @@ template {
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 90%);
     text-align: center;
 }
-.form_h2 {
-    font-size: 2rem;
-    margin-bottom: .5em;
-}
 .form_h5 {
     
     font-size: 0.9rem;
@@ -114,12 +110,12 @@ template {
     font-size: 0.9rem;
     margin-bottom: 1em;
 }
-.form_contenedor {
+#s1 {
     margin-top: 3em;
     display: grid;
     gap: 1em;
 }
-.form_group_nusuario {
+#s1 {
     position: relative;
     --color: #A59EAA;
 }
